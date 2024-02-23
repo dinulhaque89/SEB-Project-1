@@ -1,2 +1,99 @@
-* { box-sizing: border-box; 
+* { 
+    box-sizing: border-box; 
+    margin: 0; /* Reset the margin */
+    padding: 0; /* Reset the padding */
+    font-family: Arial, sans-serif;
+  } /* Good, this is a recommended reset */
+  
+  body {
+    background-color: black; /* Set a background color for the body */
+    display: flex; /* Use flexbox for center alignment */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    color: white; 
+  }
+  
+
+  
+  #game-board { 
+    position: absolute;
+    height: 560px; 
+    width: 560px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the game board */
+    border: 1px solid blue;
+    background-color: black; 
+    overflow: hidden;
+  }
+  
+  .pac-man { 
+    position: absolute; /* Keep this as absolute */
+    height: 20px;
+    width: 20px;
+    background-color: yellow;
+    z-index: 2; 
+    background-image: url('../images/pacman.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+  }
+  
+  .food { /* Similar to .pac-man */
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: red;
+  }
+  
+  .ghost { /* Similar to .pac-man */ 
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-image: url('../images/ghost.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+  }
+  
+  .wall { 
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: blue; 
+  }
+
+  .dot {
+    width: 4px; 
+    height: 4px;
+    background-color: white; 
+    border-radius: 50%; /* Makes the dot round */
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#score {
+  position: absolute; /* Position the score */
+  top: 10px;
+  left: 10px;
+  color: red; 
+  font-size: 1.5em; 
+}
+
+#lives-display {
+
+  color: red;
+  font-size: 1.5em;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#instructions {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 1em;
 }
