@@ -141,6 +141,7 @@ function moveGhostChase() {
     checkCollisionWithPacMan();
 }
 
+//This line declares a function named checkCollisionWithPacMan. This function will be used to check if Pac-Man and the ghost have collided in the game.
 function checkCollisionWithPacMan() {
     const pacRect = pacMan.getBoundingClientRect();
     const ghostRect = ghost.getBoundingClientRect();

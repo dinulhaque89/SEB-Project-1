@@ -61,6 +61,8 @@ Contains the JavaScript logic for the game's functionality. This includes moving
 3. Use the arrow keys to move Pac-Man through the maze.
 4. The game's objective is to eat all the dots without getting caught by the ghosts.
 
+You can also play the game online by visiting [Pac-Man](https://dinulhaque89.github.io/SEB-Project-1/).
+
 ## Enhancements
 - The ghost AI has been enhanced to chase Pac-Man instead of moving randomly.
 - Pac-Man has three lives. If caught by a ghost, one life is deducted.
